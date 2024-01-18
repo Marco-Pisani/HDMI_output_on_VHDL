@@ -15,5 +15,5 @@ Understanding the encoder module: https://www.cs.unc.edu/Research/stc/FAQs/Video
 
 toppest_lvl.vhd is the highr wrapper module of everything, it contains cpu, clock_gen and top_lvl:
 
-![alt text]([http://url/to/img.png](https://github.com/Marco-Pisani/HDMI_output_on_VHDL/blob/main/cpu_test.png)https://github.com/Marco-Pisani/HDMI_output_on_VHDL/blob/main/cpu_test.png
+![alt text]([http://url/to/img.png](https://github.com/Marco-Pisani/HDMI_output_on_VHDL/blob/main/cpu_test.png)https://github.com/Marco-Pisani/HDMI_output_on_VHDL/blob/main/cpu_test.png)
 
