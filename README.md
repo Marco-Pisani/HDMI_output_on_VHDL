@@ -13,8 +13,9 @@ current resolution is 480x640 60 Hz
 Understanding the encoder module: https://www.cs.unc.edu/Research/stc/FAQs/Video/dvi_spec-V1_0.pdf
 
 
-### explanation
+# Explanation
 
+### toppest_lvl
 toppest_lvl.vhd is the higher wrapper module of everything, it contains cpu, clock_gen and top_lvl:
 
 ![Screenshot](cpu_test.png)
@@ -22,6 +23,7 @@ toppest_lvl.vhd is the higher wrapper module of everything, it contains cpu, clo
 The cpu simulates a device that writes into a memory (inside top_lvl) that stores the bit values of the pixels of the current frame to display. Each pixel is 24 bits and the cpu can write 1 pixel at time at the specified address.
 The clock_gen module generates the necessary clocks.
 
+### top_lvl
 Top_lvl contains letter, memory and HDMI:
 
 ![Screenshot](top_lvl.png)
@@ -34,6 +36,7 @@ The letter module is between the cpu and the memory, it operates in two differen
 
 The memory module is a read/write memory that should contain 480x640 cells of 24 bits each but there aren't as many memory cells in the Zybo chip so it instead contains 240x320 cells of 24 bits each. It means that the resolution is still 480x640 but each pixel is 4 times bigger than it should so to the human eye the resolution is 240x320.
 
+### HDMI
 The HDMI module contains 1 signal_timings, 3 encoder_xor_xnor (one for each color: red, green and blue) and 4 serializer (one for each color and one for the output clock to have the same delay):
 
 ![Screenshot](HDMI.png)
