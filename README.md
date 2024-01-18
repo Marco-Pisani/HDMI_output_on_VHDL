@@ -13,7 +13,7 @@ current resolution is 480x640 60 Hz
 Understanding the encoder module: https://www.cs.unc.edu/Research/stc/FAQs/Video/dvi_spec-V1_0.pdf
 
 
-## explanation
+### explanation
 
 toppest_lvl.vhd is the higher wrapper module of everything, it contains cpu, clock_gen and top_lvl:
 
