@@ -3,15 +3,8 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity top_level is
    Port (
@@ -33,7 +26,6 @@ end top_level;
 
 architecture Behavioral of top_level is
 
---    signal pixel_clk, serial_clk, serial_clk_2, letter_clk: std_logic;
     signal memory_enable_letter: std_logic;
     signal address_w: std_logic_vector(16 downto 0);
     signal data_w: std_logic_vector(23 downto 0);
