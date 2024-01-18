@@ -1,5 +1,7 @@
 # HDMI_output_on_VHDL
-VHDL code for HDMI output on a Zybo z7-20
+VHDL code for HDMI output on a Zybo z7-20.
+The HDMI module reads each pixels from a memory that stores the data of each frame; the memory can be written by the cpu of the Zynq chip but I'm currently working on it.
+In this project the actual cpu is replaced by a vhdl module that simulates some writings.
 
 # story
 It was an university project on VHDL that is part of something bigger that should also connect to the ARM cpu of the Zynq chip. I tried doing everything myself without using IPs in order to learn VHDL.
