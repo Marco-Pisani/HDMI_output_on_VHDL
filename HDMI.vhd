@@ -119,8 +119,9 @@ begin
             out_p => red_p,
             out_n => red_n
         );
-        
-    clock_serializer: entity work.serializer        -- to have the same delay
+
+    -- to have the same delay
+    clock_serializer: entity work.serializer        
         port map(
             data_clk => pixel_clk,
             fast_clk => serial_clk,
